@@ -1,0 +1,28 @@
+{
+  "name": "css-color-replace-loader",
+  "version": "1.0.0",
+  "description": "用于替换 css-laoder 处理后内容中的颜色值为动态读取。从而实现网站换肤",
+  "main": "dist/cjs.js",
+  "repository": "https://github.com/bigRoseUU/css-color-replace-loader.git",
+  "author": "林嘉珉 <linjiamin@xlink.cn>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build -- -w",
+    "build": "./node_modules/.bin/babel src --out-dir dist --copy-files --extensions \".ts\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/loader-utils": "^2.0.1",
+    "@types/tinycolor2": "^1.4.2",
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.7.1",
+    "tinycolor2": "^1.4.1"
+  },
+  "dependencies": {
+    "core-js": "3"
+  }
+}
